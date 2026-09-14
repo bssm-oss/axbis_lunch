@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { GetLunch } from "./api/menu";
 
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 async function MenuList() {
   const courses = await GetLunch();
