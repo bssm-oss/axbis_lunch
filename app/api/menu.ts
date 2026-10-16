@@ -1,6 +1,6 @@
 import { DayMenu, MealResponse } from "../type/courses";
 
-const REVALIDATE_TIME = 3600 * 48; // 48시간
+const REVALIDATE_TIME = 3600; // 1시간 (CI가 매일 아침 10시에 메뉴 갱신하므로 최대 1시간 지연만 허용)
 
 /**
  * 한국 표준시(KST, UTC+9) 기준 Date 객체 반환
